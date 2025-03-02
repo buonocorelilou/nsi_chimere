@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Chimères</title>
 		 <link rel="stylesheet" href="style.css">
+		 <script src="script.js"></script>
     </head>
     <body>
 	<div class="conteneur">
@@ -12,24 +13,66 @@
 		</div>
 		<div class="corps">
 		<h1>Ma sculpture</h1>
-		<p>En classe d'option art plastique nous devions réaliser une chimère :</p>
-		<img src = "images/ma_sculpture.png"/>
+		<p>En cours d'option art plastique nous devions réaliser une chimère :</p>
+		<img src = "images/sculpture/ma_sculpture.png"/>
 		<p> Je me suis inspirée de ses trois animaux : Le <b>sea sheep</b> pour la tête, le <b>dendrobate</b> pour les pattes et le corps et enfin le <b>paradisier grand émeraude</b> pour les plumes à l'arrière.</p>
 		
 		<div class="conteneur">
 			<div>
-			<img src = "images/sea_sheep.png"/>
+			<img src = "images/sculpture/sea_sheep.png"/>
 			<p class="source">Source : Fubiz</p>
 			</div>
 			<div>
-			<img src = "images/dendrobate.png"/>
+			<img src = "images/sculpture/dendrobate.png"/>
 			<p class="source">Source : iStock</p>
 			</div>
 			<div>
-			<img src = "images/paradisier.png"/>
+			<img src = "images/sculpture/paradisier.png"/>
 			<p class="source">Source : eBrid</p>
 			</div>
 		</div>
+			<h2>A vous de jouer : </h2>
+			<p> Crée votre propre chimère en rempliçant le formulaire ci dessous : </p>
+		
+			<form id="chimereForm">
+				<label for="tete">Tête:</label>
+				<select id="tete">
+					<option value="">Sélectionnez</option>
+					<option value="lion">Lion</option>
+					<option value="aigle">Aigle</option>
+					<option value="serpent">Serpent</option>
+				</select>
+				<br />
+				<br />
+				<label for="corps">Corps:</label>
+				<select id="corps">
+					<option value="">Sélectionnez</option>
+					<option value="cheval">Cheval</option>
+					<option value="poisson">Poisson</option>
+					<option value="dragon">Dragon</option>
+				</select>
+				<br />
+				<br />
+				<label for="pattes">Pattes:</label>
+				<select id="pattes">
+					<option value="">Sélectionnez</option>
+					<option value="aigle">Aigle</option>
+					<option value="lion">Lion</option>
+					<option value="cheval">Cheval</option>
+				</select>
+				<br />
+				<br />
+				<input
+					type="submit"
+					value="Créer"
+					onclick="validation_formulaire(event)"
+				/>
+			</form>
+			<br />
+			<div id="chimere"></div>
+			<br />
+
+	
 		</div>
 		<div class="zone_bouton">
 		</div>
