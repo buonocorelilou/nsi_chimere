@@ -8,7 +8,7 @@ function validation_formulaire(event) {
     if (tete === "" || corps === "" || pattes === "") {
         alert("Veuillez remplir tous les champs !");
     } else {
-        var userInput = `Créé l'image d'une chimère avec une tête de ${tete}, un corps de ${corps}, et des pattes de ${pattes} dans un style réaliste.`;
-        document.getElementById('chimere').innerText = userInput;
+        var promptChimere = `Créé l'image d'une chimère avec une tête de ${tete}, un corps de ${corps}, et des pattes de ${pattes} dans un style réaliste.`;
+        document.getElementById('chimere').innerText = promptChimere;
     }
 }

@@ -41,7 +41,6 @@ p{
 	width : 100%;
 	display: flex;
     justify-content: space-between;
-    align-items: stretch;
 }
 .zone_bouton{
     width: 15%;
